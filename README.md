@@ -2,7 +2,7 @@
 
 ## Development Step
 
-```cmd
+```bash
 $ make migrate-create-db
 $ make migrate-create-schema
 $ make migrate-create-seeder
