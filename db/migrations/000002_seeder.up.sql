@@ -1,1 +1,1 @@
-INSERT INTO account (owner, balance) VALUES ('yo', 1000000);
+INSERT INTO accounts (owner, balance) VALUES ('yo', 1000000);
