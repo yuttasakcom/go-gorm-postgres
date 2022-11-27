@@ -1,15 +1,17 @@
-package db
+package account
 
 import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
+	"github.com/yuttasakcom/go-gorm-postgres/db"
 )
 
 func TestCreateAccount(t *testing.T) {
+	db.TestDBInit()
 	balance := int64(100)
-	account := testQueries.CreateAccount(Accounts{
-		Owner:   "yea",
+	account := CreateAccount(Accounts{
+		Owner:   "yuttasak",
 		Balance: balance,
 	})
 

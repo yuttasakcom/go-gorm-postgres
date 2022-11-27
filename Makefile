@@ -1,5 +1,5 @@
 migrate-create-db:
-	docker-compose exec -it db createdb --username=root --owner=root simple_bank
+	docker-compose exec -it postgres15 createdb --username=root --owner=root simple_bank
 
 migrate-create-schema:
 	migrate create -ext sql -dir db/migrations -seq init_schema
